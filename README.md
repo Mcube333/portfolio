@@ -51,3 +51,14 @@ mvn test -Dsuite=smoke
 ```
 
 See the README in each repository for prerequisites and options.
+## About
+
+I'm Mohammed Mudassir Maniyar, an SDET working on e-commerce quality. My day-to-day work includes:
+
+- Building a production Playwright + Java suite (98 E2E tests) with parallel-safe sessions and CI reporting
+- Migrating a mobile suite from Python/Appium on LambdaTest to Java
+- Auditing analytics tracking (MoEngage) on a checkout revamp, which led to the event validator in this portfolio
+
+The projects above are clean-room rebuilds of those patterns on public apps.
+
+[LinkedIn](https://linkedin.com/in/mohammed-mudassir03)
