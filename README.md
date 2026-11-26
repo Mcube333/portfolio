@@ -1,3 +1,24 @@
+<p align="center">
+  <img src="banner.svg" alt="QA & SDET Portfolio" width="100%">
+</p>
+
+<p align="center">
+  <img alt="Playwright" src="https://img.shields.io/badge/Playwright-2EAD33?logo=playwright&logoColor=white">
+  <img alt="Appium" src="https://img.shields.io/badge/Appium-662D91?logo=appium&logoColor=white">
+  <img alt="k6" src="https://img.shields.io/badge/k6-7D64FF?logo=k6&logoColor=white">
+  <img alt="Java" src="https://img.shields.io/badge/Java_17-ED8B00?logo=openjdk&logoColor=white">
+  <img alt="GitHub Actions" src="https://img.shields.io/badge/GitHub_Actions-2088FF?logo=githubactions&logoColor=white">
+  <a href="https://linkedin.com/in/mohammed-mudassir03"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white"></a>
+</p>
+
+<p align="center">
+  <a href="#projects">Projects</a> ·
+  <a href="#how-the-pieces-fit">How it fits</a> ·
+  <a href="#engineering-practices-used-across-the-projects">Practices</a> ·
+  <a href="#getting-started">Getting started</a> ·
+  <a href="#about">About</a>
+</p>
+
 # QA & SDET Portfolio
 
 A set of small, working projects that show how I approach quality engineering end to end:
@@ -20,6 +41,16 @@ and the code projects include a PII check where relevant.
 | [**claude-skills-for-qa**](https://github.com/Mcube333/claude-skills-for-qa) | 19 reusable AI skills for QA work: PRD to test cases, test automation writers, flaky-test debugging, analytics audits, RCA, regression planning and more | Markdown skills, Python helpers |
 
 ## How the pieces fit
+
+```mermaid
+flowchart LR
+    API[(Public e-commerce API)]
+    PW["Playwright<br/>UI + API"] --> API
+    K6["k6<br/>Performance"] --> API
+    AP["Appium<br/>Android"] --> APP[Mobile app]
+    AN[Analytics validator] --> EV[(Tracking events)]
+    SK[Claude skills] -. speed up .-> PW & AP & K6 & AN
+```
 
 - **One system, several test layers.** The Playwright (UI + API) and k6 (performance) projects
   test the same public e-commerce API, so functional, API and performance coverage line up.
